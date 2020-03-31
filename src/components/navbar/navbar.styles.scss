@@ -1,0 +1,42 @@
+@import "../../assets/styles/helpers/colors.scss";
+@import "../../assets/styles/mixins/displays.scss";
+
+.navbar {
+  padding: 30px 20px;
+  .container {
+    justify-content: space-between;
+    @include d-flex_a-center;
+  }
+}
+.text-orange {
+  margin: 0;
+  color: $orange;
+}
+.nav {
+  margin: 0;
+  @include d-flex_a-center;
+  li {
+    list-style: none;
+    margin-left: 30px;
+  }
+}
+.link {
+  text-decoration: none;
+  color: $gray;
+  font-size: 1em;
+  transition: ease-in-out;
+  color: $light-gray;
+}
+.active {
+  color: $gray;
+}
+.active::before {
+  content: "";
+  position: absolute;
+  top: 65px;
+  bottom: 0px;
+  height: 3.5px;
+  border-radius: 20%;
+  width: 20px;
+  background-color: $orange;
+}

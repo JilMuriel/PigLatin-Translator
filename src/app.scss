@@ -1,0 +1,20 @@
+@import "./assets/styles/helpers/colors.scss";
+html,
+body {
+  font-size: 1em;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppuns", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  color: $gray;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
