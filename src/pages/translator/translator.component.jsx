@@ -39,7 +39,7 @@ class Translator extends React.Component {
                 name="phrase"
                 value={this.state.phrase}
                 onChange={this.handleChange}
-                placeholder="Type a here.."
+                placeholder="Type here.."
               />
             </div>
             <div className="card">
